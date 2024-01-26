@@ -4,11 +4,13 @@ void main() {
   print(
     createUserName('Fabian', 'Nuñez'),
   );
+  printMessage();
 }
 
 String createUserName(
   String firstName,
   String lastName,
-) {
-  return '$firstName$lastName';
-}
+) =>
+    '$firstName $lastName';
+
+void printMessage() => print('Hola¡¡ soy un arrow function');
